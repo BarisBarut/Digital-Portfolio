@@ -31,7 +31,7 @@
         }
         .content {
             margin-top: 30px;
-            display: none;
+            display: none; /* Hide all sections initially */
         }
         .soon {
             font-style: italic;
@@ -50,13 +50,13 @@
     <h1>Welcome to My Digital Portfolio</h1>
 
     <nav>
-        <a href="#home" onclick="showHome()">Home</a>
-        <a href="#manual-assessment-memo" onclick="showSoon('manual-assessment-memo')">Manual Assessment Memo</a>
-        <a href="#chatbot" onclick="showSoon('chatbot')">Chatbot</a>
-        <a href="#procedure-video" onclick="showSoon('procedure-video')">Procedure Video</a>
-        <a href="#manual" onclick="showSoon('manual')">Manual</a>
-        <a href="#reflective-blogs" onclick="showSoon('reflective-blogs')">Reflective Blogs</a>
-        <a href="#contact-me" onclick="showSoon('contact-me')">Contact Me</a>
+        <a href="javascript:void(0);" onclick="showHome()">Home</a>
+        <a href="javascript:void(0);" onclick="showSoon('manual-assessment-memo')">Manual Assessment Memo</a>
+        <a href="javascript:void(0);" onclick="showSoon('chatbot')">Chatbot</a>
+        <a href="javascript:void(0);" onclick="showSoon('procedure-video')">Procedure Video</a>
+        <a href="javascript:void(0);" onclick="showSoon('manual')">Manual</a>
+        <a href="javascript:void(0);" onclick="showSoon('reflective-blogs')">Reflective Blogs</a>
+        <a href="javascript:void(0);" onclick="showSoon('contact-me')">Contact Me</a>
     </nav>
 
     <div class="content" id="home" style="display: block;">
@@ -93,7 +93,7 @@
             document.querySelectorAll('.content').forEach(function(section) {
                 section.style.display = 'none';
             });
-            // Show the clicked section
+            // Show the clicked section and display the Soon text
             document.getElementById(id).style.display = 'block';
         }
 
@@ -102,6 +102,7 @@
             document.querySelectorAll('.content').forEach(function(section) {
                 section.style.display = 'none';
             });
+            // Display Home section with About Me
             document.getElementById('home').style.display = 'block';
         }
     </script>
