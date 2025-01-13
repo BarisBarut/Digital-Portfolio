@@ -32,6 +32,16 @@
         .content {
             margin-top: 30px;
         }
+        .soon {
+            font-style: italic;
+            color: gray;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            font-size: small;
+            color: #777;
+        }
     </style>
 </head>
 <body>
@@ -40,17 +50,50 @@
 
     <nav>
         <a href="#home">Home</a>
-        <a href="#manual-assessment-memo">Manual Assessment Memo</a>
-        <a href="#chatbot">Chatbot</a>
-        <a href="#procedure-video">Procedure Video</a>
-        <a href="#manual">Manual</a>
-        <a href="#reflective-blogs">Reflective Blogs</a>
+        <a href="#manual-assessment-memo" onclick="showSoon('manual-assessment-memo')">Manual Assessment Memo</a>
+        <a href="#chatbot" onclick="showSoon('chatbot')">Chatbot</a>
+        <a href="#procedure-video" onclick="showSoon('procedure-video')">Procedure Video</a>
+        <a href="#manual" onclick="showSoon('manual')">Manual</a>
+        <a href="#reflective-blogs" onclick="showSoon('reflective-blogs')">Reflective Blogs</a>
+        <a href="#contact-me" onclick="showSoon('contact-me')">Contact Me</a>
     </nav>
 
     <div class="content" id="home">
         <h2><strong>About Me</strong></h2>
         <p>Hello, I’m Baris Barut, an IT major at the University of Central Florida. I aspire to build a career in networking and software development, leveraging my expertise in coding (Java, C) and networking, with plans to earn my Network+ certification soon. My diverse experiences as a bartender, Marine Biology spokesperson, and printing press operator have helped me develop strong skills in public speaking, organization, and quick thinking.</p>
     </div>
+
+    <div id="manual-assessment-memo" class="content">
+        <p class="soon">Soon.</p>
+    </div>
+    <div id="chatbot" class="content">
+        <p class="soon">Soon.</p>
+    </div>
+    <div id="procedure-video" class="content">
+        <p class="soon">Soon.</p>
+    </div>
+    <div id="manual" class="content">
+        <p class="soon">Soon.</p>
+    </div>
+    <div id="reflective-blogs" class="content">
+        <p class="soon">Soon.</p>
+    </div>
+    <div id="contact-me" class="content">
+        <p class="soon">Soon.</p>
+    </div>
+
+    <footer>
+        <p>Text formatting and URL implementation aided by ChatGPT.</p>
+    </footer>
+
+    <script>
+        function showSoon(id) {
+            document.querySelectorAll('.content').forEach(function(section) {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
 
 </body>
 </html>
