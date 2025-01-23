@@ -1,9 +1,10 @@
-document.getElementById("reflective_blogs_tab").addEventListener("click", function() {
-  document.getElementById("reflective_blogs").style.display = "block"; // Show blog content
-  window.location.hash = "reflective_blogs"; // Add hash for URL change
-});
+// Function to show the reflective blogs section
+function showReflectiveBlogs() {
+  document.getElementById('reflective_blogs').style.display = 'block';
+}
 
-// Hide reflective blog by default when loading the page
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("reflective_blogs").style.display = "none";
+// Add event listener to the Reflective Blogs tab to show the section when clicked
+document.getElementById('reflective_blogs_tab').addEventListener('click', function(event) {
+  event.preventDefault();
+  showReflectiveBlogs();
 });
