@@ -155,25 +155,31 @@ body {
 /* Blog Container for Text and GIF */
 .blog-container {
   display: flex;
-  gap: 20px; /* Add spacing between text and GIF */
+  gap: 10px; /* Reduce the gap between text and GIF */
   align-items: flex-start; /* Align items at the top */
+  justify-content: center; /* Center the container on the page */
+  margin: 0 auto; /* Add automatic margins for better centering */
+  max-width: 80%; /* Ensure the layout doesn't stretch too far */
 }
 
 /* Blog Post Styling */
 .blog-post {
   flex: 3; /* Blog text takes 3 parts of the container */
+  max-width: 60%; /* Ensure the text area doesn't get too wide */
 }
 
 /* GIF Styling */
 .gif-container {
   flex: 2; /* GIF takes 2 parts of the container */
+  max-width: 30%; /* Restrict the GIF's maximum width */
 }
 
 .gif-container img {
-  max-width: 100%; /* Ensure the GIF scales properly */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%; /* Make the GIF fully responsive within its container */
+  height: auto; /* Maintain the aspect ratio */
   border-radius: 8px; /* Optional: Add rounded corners */
 }
+
 
 
 
