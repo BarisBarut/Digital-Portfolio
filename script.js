@@ -3,25 +3,22 @@ document.querySelectorAll('.navbar a').forEach(tab => {
   tab.addEventListener('click', function(event) {
     event.preventDefault();  // Prevent default link behavior
 
-    // Hide the About Me content and all custom "Soon." messages
+    // Hide the About Me content and all sections
     document.querySelector('.about-me').style.display = 'none';  // Hide About Me section
     document.querySelectorAll('.soon-message').forEach(message => {
       message.style.display = 'none';
     });
 
-    // Get the ID from the href (for example, 'manual_assessment_memo')
-    const id = tab.getAttribute('href').substring(1);
-
+    // Get the ID from the href (for example, 'reflective_blogs')
+    const id = tab.getAttribute('href').substring(0, tab.getAttribute('href').length - 5);
+    
     // If it's the Home tab, show the About Me content
     if (id === "index") {
       document.querySelector('.about-me').style.display = 'block';  // Show About Me
-    } else {
-      // Change the message to be more specific for each tab
+    } else if (id === "reflective_blogs") {
+      // Show the Reflective Blogs section
       const message = document.getElementById(id);
-      if (message) {
-        message.innerText = `${id.charAt(0).toUpperCase() + id.slice(1).replace(/_/g, ' ')} soon.`;  // Update the message with the tab name
-        message.style.display = 'block';  // Show the customized "Soon." message
-      }
+      message.style.display = 'block';  // Show Reflective Blogs
     }
   });
 });
