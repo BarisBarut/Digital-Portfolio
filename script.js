@@ -1,24 +1,23 @@
 // Toggle visibility for tabs
 document.querySelectorAll('.navbar a').forEach(tab => {
   tab.addEventListener('click', function(event) {
-    event.preventDefault();  // Prevent default link behavior
+    event.preventDefault();
 
-    // Hide the About Me content and all sections
-    document.querySelector('.about-me').style.display = 'none';  // Hide About Me section
-    document.querySelectorAll('.soon-message').forEach(message => {
-      message.style.display = 'none';
+    // Hide all content sections
+    document.querySelectorAll('.content').forEach(content => {
+      content.style.display = 'none';
     });
 
-    // Get the ID from the href (for example, 'reflective_blogs')
-    const id = tab.getAttribute('href').substring(0, tab.getAttribute('href').length - 5);
-    
-    // If it's the Home tab, show the About Me content
-    if (id === "index") {
-      document.querySelector('.about-me').style.display = 'block';  // Show About Me
-    } else if (id === "reflective_blogs") {
-      // Show the Reflective Blogs section
-      const message = document.getElementById(id);
-      message.style.display = 'block';  // Show Reflective Blogs
+    // Show the clicked tab's content
+    const id = this.getAttribute('href').substring(1); // Get ID without #
+    const content = document.getElementById(id);
+    if (content) {
+      content.style.display = 'block';
     }
   });
+});
+
+// Show "About Me" by default on load
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelector('.about-me').style.display = 'block';
 });
