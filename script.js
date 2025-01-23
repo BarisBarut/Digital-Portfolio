@@ -15,3 +15,21 @@ document.querySelectorAll('.tab-link').forEach(tab => {
     }
   });
 });
+
+document.querySelectorAll('.read-more').forEach(button => {
+  button.addEventListener('click', function () {
+    const blogSummary = this.previousElementSibling.previousElementSibling;
+    const blogFull = this.previousElementSibling;
+
+    if (blogFull.style.display === 'none') {
+      blogFull.style.display = 'block';
+      blogSummary.style.display = 'none';
+      this.textContent = 'Show Less';
+    } else {
+      blogFull.style.display = 'none';
+      blogSummary.style.display = 'block';
+      this.textContent = 'Read More';
+    }
+  });
+});
+
