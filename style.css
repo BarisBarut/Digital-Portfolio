@@ -4,19 +4,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4; /* Light background for the whole page */
+  background-color: #f4f4f4;
 }
 
 /* Navigation Bar Styles */
 .navbar {
-  background-color: #333; /* Dark gray background for navbar */
+  background-color: #333;
   overflow: hidden;
 }
 
 .navbar a {
   float: left;
   display: block;
-  color: #fff; /* White text for links */
+  color: #fff;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -30,11 +30,6 @@ body {
 /* Content Section */
 .content {
   padding: 20px;
-  display: none; /* Default state for content sections is hidden */
-}
-
-#home {
-  display: block; /* Ensure the Home section is visible by default */
 }
 
 /* About Me Section */
@@ -57,32 +52,32 @@ body {
   color: #333;
 }
 
-/* Blog Post Section */
-#reflective_blogs {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
+/* Reflective Blog Post Layout */
 .blog-post {
-  background-color: #f9f9f9; /* Light gray background for blog posts */
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.blog-post h3 {
-  font-size: 20px;
-  color: #444;
-  margin-bottom: 10px;
+.blog-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
-.blog-post p {
-  font-size: 14px; /* Small font for blog content */
-  line-height: 1.6;
-  color: #555;
+.blog-text {
+  width: 70%;
+}
+
+.blog-images {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.blog-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
 }
 
 /* Footer Styles */
@@ -106,5 +101,14 @@ footer p {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .blog-content-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-text, .blog-images {
+    width: 100%;
   }
 }
