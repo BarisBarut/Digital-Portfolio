@@ -152,6 +152,30 @@ body {
   background-color: #555;
 }
 
+/* Blog Container for Text and GIF */
+.blog-container {
+  display: flex;
+  gap: 20px; /* Add spacing between text and GIF */
+  align-items: flex-start; /* Align items at the top */
+}
+
+/* Blog Post Styling */
+.blog-post {
+  flex: 3; /* Blog text takes 3 parts of the container */
+}
+
+/* GIF Styling */
+.gif-container {
+  flex: 2; /* GIF takes 2 parts of the container */
+}
+
+.gif-container img {
+  max-width: 100%; /* Ensure the GIF scales properly */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+
 
 
 
