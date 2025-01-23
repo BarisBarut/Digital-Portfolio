@@ -59,18 +59,22 @@ body {
 
 /* Blog Post Section */
 #reflective_blogs {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between blog and images */
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 60%; /* Set width to 60% of the page */
+  margin: 0 auto; /* Center the content */
 }
 
 .blog-post {
-  background-color: #f9f9f9; /* Light gray background for blog posts */
+  background-color: #f9f9f9;
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  margin-bottom: 20px;
+  width: 100%; /* Ensure the text fits in the box */
 }
 
 .blog-post h3 {
@@ -80,10 +84,24 @@ body {
 }
 
 .blog-post p {
-  font-size: 14px; /* Small font for blog content */
+  font-size: 14px; 
   line-height: 1.6;
   color: #555;
 }
+
+/* Image Styling */
+.blog-images {
+  width: 40%; /* 40% of the width for images */
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+}
+
+.blog-images img {
+  width: 100%; /* Make images responsive */
+  border-radius: 8px; /* Optional: Round image corners */
+  margin-bottom: 10px; /* Add space between images */
+}
+
 
 /* Footer Styles */
 footer {
