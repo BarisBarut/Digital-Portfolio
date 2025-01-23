@@ -77,4 +77,10 @@ footer p {
 }
 
 /* Responsive Design */
-@media
+@media (max-width: 768px) {
+  .navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
