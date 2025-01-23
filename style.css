@@ -102,6 +102,30 @@ body {
   margin-bottom: 10px; /* Add space between images */
 }
 
+.blog-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.blog-post {
+  width: 60%; /* Blog text takes 60% width */
+}
+
+.blog-gif {
+  width: 40%; /* GIF takes the remaining 40% */
+  display: flex;
+  justify-content: center; /* Centers the GIF horizontally */
+}
+
+.blog-gif img {
+  max-width: 100%; /* Ensures the GIF scales within its container */
+  height: auto; /* Maintains the aspect ratio */
+  border-radius: 8px; /* Optional: Adds rounded corners to the GIF */
+}
+
+
 
 /* Footer Styles */
 footer {
