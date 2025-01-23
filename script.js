@@ -1,18 +1,17 @@
-document.querySelectorAll('.navbar a').forEach(tab => {
-  tab.addEventListener('click', function(event) {
-    event.preventDefault();  // Prevent default link behavior
+document.querySelectorAll('.tab-link').forEach(tab => {
+  tab.addEventListener('click', function (event) {
+    event.preventDefault();
 
-    // Hide the About Me content and Reflective Blogs section initially
-    document.querySelector('.about-me').style.display = 'none';  // Hide About Me section
-    document.querySelector('#reflective_blogs').style.display = 'none';  // Hide Reflective Blogs
+    // Hide all content sections
+    document.querySelectorAll('.content').forEach(content => {
+      content.style.display = 'none';
+    });
 
-    // If it's the Home tab, show the About Me content
-    const id = tab.getAttribute('href').substring(0, tab.getAttribute('href').length - 5);
-    
-    if (id === "index") {
-      document.querySelector('.about-me').style.display = 'block';  // Show About Me
-    } else if (id === "reflective_blogs") {
-      document.querySelector('#reflective_blogs').style.display = 'block';  // Show Reflective Blogs
+    // Show the selected content section
+    const targetId = this.getAttribute('href').substring(1); // Remove '#' from href
+    const targetContent = document.getElementById(targetId);
+    if (targetContent) {
+      targetContent.style.display = 'block';
     }
   });
 });
