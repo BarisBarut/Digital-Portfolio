@@ -19,25 +19,21 @@ document.querySelectorAll('.tab-link').forEach(tab => {
 document.querySelectorAll('.read-more').forEach(button => {
   button.addEventListener('click', function() {
     const fullContent = this.previousElementSibling; // The .blog-full element
+    const summary = this.previousElementSibling.previousElementSibling; // The .blog-summary element
 
     // Toggle visibility of the full content (steps + images)
     if (fullContent.style.display === 'none') {
       fullContent.style.display = 'block';
+      summary.style.display = 'none'; // Hide the summary once full content is revealed
+      this.textContent = 'Show Less'; // Change button text to 'Show Less'
     } else {
       fullContent.style.display = 'none';
+      summary.style.display = 'block'; // Show the summary again
+      this.textContent = 'Read More'; // Change button text to 'Read More'
     }
-
-    // Also toggle the visibility of the step images/content within the .blog-full section
-    const stepContents = fullContent.querySelectorAll('.step-content');
-    stepContents.forEach(content => {
-      if (content.style.display === 'none') {
-        content.style.display = 'block';
-      } else {
-        content.style.display = 'none';
-      }
-    });
   });
 });
+
 
 
 
