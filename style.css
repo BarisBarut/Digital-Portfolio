@@ -97,22 +97,22 @@ body {
 }
 
 #wifi-router-guide {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column; /* Makes sure posts are stacked */
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
 #wifi-router-guide .blog-post {
-    flex: 1;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    max-width: 55%;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 80%; /* Ensures the Wi-Fi guide is centered and not stretched */
 }
-
 
 /* Footer Styles */
 footer {
@@ -130,4 +130,38 @@ footer {
 footer p {
   margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any padding */
+}
+
+/* Read More Button */
+.read-more {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.read-more:hover {
+  background-color: #45a049;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .blog-container {
+    flex-direction: column; /* Stack blog posts vertically on smaller screens */
+  }
+
+  .blog-post {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  #wifi-router-guide .blog-post {
+    width: 90%; /* Make the Wi-Fi guide section take up more width */
+  }
+
+  .navbar a {
+    padding: 10px 15px;
+  }
 }
