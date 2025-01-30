@@ -78,73 +78,55 @@ body {
 
 /* Blog Post Styling */
 .blog-post {
-  flex: 1;
-  background-color: #f9f9f9;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  max-width: 45%; /* Adjusted to ensure both blogs align properly */
-}
-
-.blog-post h3 {
-  font-size: 20px;
-  color: #444;
-  margin-bottom: 10px;
-}
-
-.blog-post p {
-  font-size: 12px;
-  line-height: 1.4;
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 45%; /* Ensure both blogs align properly */
 }
 
 /* Wi-Fi Router Guide Styling */
-#wifi-router-guide {
-  display: flex;
-  gap: 20px;
-  flex-direction: column; /* Makes sure posts are stacked */
-  margin-top: 40px;
-  align-items: flex-start; /* Aligns content to the left */
-  justify-content: flex-start;
-  margin: 0 auto;
-}
-
 #wifi-router-guide .blog-post {
-  background-color: #f9f9f9;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  max-width: 100%;
-  width: 80%; /* Ensures the Wi-Fi guide is centered and not stretched */
-  margin: 0 auto; /* Ensures equal spacing around the blog post */
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 15px;
+    max-width: 100%;
+    width: 80%; /* Ensures the Wi-Fi guide is centered */
+    margin: 0 auto;
 }
 
-#wifi-router-guide .blog-post h3 {
-  font-size: 20px;
-  color: #444;
-  margin-bottom: 10px;
+/* Image and Caption Styling */
+.step-image img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
 }
 
-#wifi-router-guide .blog-post p {
-  font-size: 12px;
-  line-height: 1.4;
+.step-image figcaption {
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+    margin-top: 5px;
 }
 
 /* Read More Button */
 .read-more {
-  display: inline-block;
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 15px;
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
 }
 
 .read-more:hover {
-  background-color: #45a049; /* Darker green when hovered */
+    background-color: #45a049; /* Darker green on hover */
 }
+
 
 /* Step Image Styling */
 .step-image {
