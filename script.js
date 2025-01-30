@@ -17,19 +17,18 @@ document.querySelectorAll('.tab-link').forEach(tab => {
 });
 
 document.querySelectorAll('.read-more').forEach(button => {
-  button.addEventListener('click', function () {
-    const blogSummary = this.previousElementSibling.previousElementSibling;
-    const blogFull = this.previousElementSibling;
+  button.addEventListener('click', function() {
+    const fullContent = this.previousElementSibling; // The .blog-full element
+    const stepContents = fullContent.querySelectorAll('.step-content');
 
-    if (blogFull.style.display === 'none') {
-      blogFull.style.display = 'block';
-      blogSummary.style.display = 'none';
-      this.textContent = 'Show Less';
-    } else {
-      blogFull.style.display = 'none';
-      blogSummary.style.display = 'block';
-      this.textContent = 'Read More';
-    }
+    // Toggle the visibility of the full content
+    fullContent.style.display = fullContent.style.display === 'none' ? 'block' : 'none';
+
+    // Toggle the visibility of the step images/content
+    stepContents.forEach(content => {
+      content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    });
   });
 });
+
 
