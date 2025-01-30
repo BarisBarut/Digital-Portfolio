@@ -164,11 +164,12 @@ body {
 }
 
 #wifi-router-guide .step-image img {
-  width: 100%; /* Scale images within their container */
-  max-width: 40px; /* Make images about 1/5th of their previous size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: Keep rounded corners */
+  width: 100%; /* Ensure the image takes up the full container width */
+  max-width: 40px !important; /* Force max-width of 40px */
+  height: auto;
+  border-radius: 8px;
 }
+
 
 
 #wifi-router-guide .caption {
