@@ -165,7 +165,7 @@ body {
 
 #wifi-router-guide .step-image img {
   width: 100%;
-  max-width: 380px; /* Adjust the width for a more compact design */
+  max-width: 80px; /* Adjust the width for a more compact design */
   height: auto;
   border-radius: 8px;
 }
