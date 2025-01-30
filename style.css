@@ -57,13 +57,23 @@ body {
   color: #333;
 }
 
+/* Reflective Blogs Section */
+#reflective_blogs {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  max-width: 80%;
+}
+
 /* Blog Container */
 .blog-container {
   display: flex;
   gap: 20px; /* Ensures side-by-side alignment */
   align-items: flex-start; /* Aligns items at the top */
-  justify-content: center;
-  margin: 0 auto; /* Center the container */
+  justify-content: flex-start; /* Aligns content to the left */
+  margin: 0 auto;
 }
 
 /* Blog Post Styling */
@@ -73,17 +83,29 @@ body {
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  max-width: 45%; /* Ensure both blog posts share equal space */
-  margin: 0 auto; /* Centers each blog post inside the container */
+  max-width: 45%; /* Adjusted to ensure both blogs align properly */
 }
 
+.blog-post h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Wi-Fi Router Guide Styling */
 #wifi-router-guide {
   display: flex;
   gap: 20px;
   flex-direction: column; /* Makes sure posts are stacked */
   margin-top: 40px;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start; /* Aligns content to the left */
+  justify-content: flex-start;
+  margin: 0 auto;
 }
 
 #wifi-router-guide .blog-post {
@@ -96,7 +118,16 @@ body {
   margin: 0 auto; /* Ensures equal spacing around the blog post */
 }
 
+#wifi-router-guide .blog-post h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
 
+#wifi-router-guide .blog-post p {
+  font-size: 12px;
+  line-height: 1.4;
+}
 
 /* Footer Styles */
 footer {
@@ -114,38 +145,4 @@ footer {
 footer p {
   margin: 0; /* Remove any default margin */
   padding: 0; /* Remove any padding */
-}
-
-/* Read More Button */
-.read-more {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.read-more:hover {
-  background-color: #45a049;
-}
-
-/* Media Query for Small Screens */
-@media (max-width: 768px) {
-  .blog-container {
-    flex-direction: column; /* Stack blog posts vertically on smaller screens */
-  }
-
-  .blog-post {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  #wifi-router-guide .blog-post {
-    width: 90%; /* Make the Wi-Fi guide section take up more width */
-  }
-
-  .navbar a {
-    padding: 10px 15px;
-  }
 }
