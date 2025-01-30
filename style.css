@@ -73,6 +73,7 @@ body {
   gap: 20px; /* Ensures side-by-side alignment */
   align-items: flex-start; /* Aligns items at the top */
   justify-content: center;
+  margin: 0 auto; /* Center the container */
 }
 
 /* Blog Post Styling */
@@ -82,18 +83,8 @@ body {
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  max-width: 55%;
-}
-
-.blog-post h3 {
-  font-size: 20px;
-  color: #444;
-  margin-bottom: 10px;
-}
-
-.blog-post p {
-  font-size: 12px;
-  line-height: 1.4;
+  max-width: 45%; /* Ensure both blog posts share equal space */
+  margin: 0 auto; /* Centers each blog post inside the container */
 }
 
 #wifi-router-guide {
@@ -112,7 +103,9 @@ body {
   border-radius: 5px;
   max-width: 100%;
   width: 80%; /* Ensures the Wi-Fi guide is centered and not stretched */
+  margin: 0 auto; /* Ensures equal spacing around the blog post */
 }
+
 
 /* Footer Styles */
 footer {
