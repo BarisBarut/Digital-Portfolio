@@ -4,19 +4,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4; /* Light background for the whole page */
+  background-color: #f4f4f4;
 }
 
 /* Navigation Bar Styles */
 .navbar {
-  background-color: #333; /* Dark gray background for navbar */
+  background-color: #333;
   overflow: hidden;
 }
 
 .navbar a {
   float: left;
   display: block;
-  color: #fff; /* White text for links */
+  color: #fff;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
@@ -27,37 +27,7 @@ body {
   color: black;
 }
 
-/* Content Section */
-.content {
-  padding: 20px;
-  display: none; /* Default state for content sections is hidden */
-}
-
-#home {
-  display: block; /* Ensure the Home section is visible by default */
-}
-
-/* About Me Section */
-.about-me {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.about-me h2 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
-.about-me p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* Reflective Blogs Section */
+/* Reflective Blogs Section - Ensuring it's not broken */
 #reflective_blogs {
   background-color: #fff;
   padding: 20px;
@@ -67,102 +37,97 @@ body {
   max-width: 80%;
 }
 
-/* Blog Container */
 .blog-container {
   display: flex;
-  gap: 20px; /* Ensures side-by-side alignment */
-  align-items: flex-start; /* Aligns items at the top */
-  justify-content: flex-start; /* Aligns content to the left */
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
   margin: 0 auto;
 }
 
-/* Blog Post Styling */
 .blog-post {
-    flex: 1;
-    background-color: #f9f9f9;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    max-width: 45%; /* Ensure both blogs align properly */
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 45%;
 }
 
-/* Wi-Fi Router Guide Styling */
+.blog-post h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+/* Wi-Fi Router Guide Styles */
+#wifi-router-guide {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 auto;
+}
+
 #wifi-router-guide .blog-post {
-    font-size: 14px;
-    line-height: 1.6;
-    padding: 15px;
-    max-width: 100%;
-    width: 80%; /* Ensures the Wi-Fi guide is centered */
-    margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* Image and Caption Styling */
-.step-image img {
-    max-width: 200px;
-    height: auto;
-    border-radius: 5px;
+#wifi-router-guide .blog-post h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
 }
 
-.step-image figcaption {
-    font-size: 12px;
-    text-align: center;
-    color: #666;
-    margin-top: 5px;
+#wifi-router-guide .blog-post p {
+  font-size: 12px;
+  line-height: 1.4;
 }
 
 /* Read More Button */
 .read-more {
-    display: inline-block;
-    background-color: #4CAF50; /* Green background */
-    color: white; /* White text */
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 14px;
-    margin-top: 15px;
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
 }
 
 .read-more:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
-
-/* Step Image Styling */
-.step-image {
-  display: inline-block;
-  vertical-align: top; /* Aligns the image next to the text */
-  margin-left: 15px; /* Adds space between the text and image */
-  max-width: 300px; /* Limits the width of the image */
-}
-
-.step-image img {
-  width: 100%; /* Ensures the image fills its container's width */
-  height: auto; /* Maintains the aspect ratio of the image */
-  border-radius: 5px; /* Optional: Adds rounded corners to the image */
-}
-
-.step-image figcaption {
-  font-size: 12px;
-  text-align: center;
-  color: #666; /* Lighter gray for the caption text */
-  margin-top: 5px; /* Adds space between the image and caption */
+  background-color: #45a049;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #333; /* Dark gray background */
-  color: white; /* White text color */
-  text-align: center; /* Center-align the text */
-  padding: 10px 0; /* Padding for spacing */
-  font-size: 12px; /* Small font size */
-  position: fixed; /* Fixed at the bottom */
-  bottom: 0; /* Align at the bottom of the page */
-  width: 100%; /* Full-width footer */
-  z-index: 1000; /* Ensure it's above other content */
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 footer p {
-  margin: 0; /* Remove any default margin */
-  padding: 0; /* Remove any padding */
+  margin: 0;
+  padding: 0;
 }
