@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Arial', sans-serif; /* Reverting to previous font */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -184,7 +184,7 @@ body {
   font-style: italic;
 }
 
-/* Footer Styles */
+/* Footer Styles (Centered Text for all tabs) */
 footer {
   background-color: #333;
   color: white;
@@ -200,4 +200,13 @@ footer {
 footer p {
   margin: 0;
   padding: 0;
+  text-align: center; /* Ensures text is centered */
+}
+
+/* Text Formatting and URL implementation for all tabs */
+footer p:before {
+  content: "Text Formatting and URL implementation aided by ChatGPT";
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
 }
