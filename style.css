@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Arial', sans-serif; /* Reverting to previous font */
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -89,7 +89,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   max-width: 45%;
-  font-size: 13px; /* Font size unchanged for blog content */
+  font-size: 13px;
 }
 
 .blog-post h3 {
@@ -147,39 +147,33 @@ body {
 }
 
 #wifi-router-guide .blog-post p {
-  font-size: 12px; /* Font size unchanged for guide content */
+  font-size: 12px;
   line-height: 1.5;
 }
 
 /* Wi-Fi Router Guide Images */
 #wifi-router-guide .blog-images {
   display: flex;
+  flex-direction: column;
+  align-items: flex-end;  /* Align images to the right */
   gap: 20px;
-  align-items: flex-start;
-  justify-content: flex-start;
   margin-top: 16px;
-  flex-wrap: wrap;  /* Ensure the images wrap properly if they overflow */
 }
 
 #wifi-router-guide .step-image {
-  width: auto; /* Allow image to scale without stretching to 100% of available space */
-  flex-shrink: 0; /* Prevent flex items from shrinking */
-  max-width: 150px;  /* Limit maximum width */
+  max-width: 150px;
 }
-
 
 #wifi-router-guide .step-image img {
   width: 100%;
-  max-width: 150px; /* Limit maximum width */
   height: auto;
   border-radius: 8px;
 }
 
-
 #wifi-router-guide .caption {
   font-size: 12px;
   color: #444;
-  text-align: right;
+  text-align: center;
   margin-top: 4px;
   font-style: italic;
 }
@@ -200,13 +194,5 @@ footer {
 footer p {
   margin: 0;
   padding: 0;
-  text-align: center; /* Ensures text is centered */
-}
-
-/* Text Formatting and URL implementation for all tabs */
-footer p:before {
-  content: "Text Formatting and URL implementation aided by ChatGPT";
-  font-size: 14px;
-  display: block;
-  margin-bottom: 5px;
+  text-align: center;
 }
