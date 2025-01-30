@@ -146,6 +146,42 @@ body {
   background-color: #45a049; /* Darker green when hovered */
 }
 
+/* Wi-Fi Router Guide Images */
+.blog-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between images */
+  align-items: flex-end; /* Align images to the right */
+  margin-top: 20px;
+}
+
+.step-image {
+  text-align: right; /* Align the images and captions to the right */
+}
+
+.step-image img {
+  width: 100%; /* Adjust size to fit within the container */
+  max-width: 400px; /* Limit image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Add rounded corners to images */
+}
+
+.caption {
+  font-size: 14px; /* Adjust font size to match the blog text */
+  color: #444; /* Dark gray to match blog text */
+  text-align: right; /* Align captions to the right */
+  margin-top: 5px;
+  font-style: italic; /* Optional: Make the captions italic for distinction */
+}
+
+/* Make sure captions match the blog post font style */
+.blog-post p, .caption {
+  font-size: 14px; /* Ensures consistency in font size */
+  line-height: 1.6;
+  color: #333;
+}
+
+
 /* Footer Styles */
 footer {
   background-color: #333; /* Dark gray background */
