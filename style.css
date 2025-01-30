@@ -1,28 +1,29 @@
 /* General Styles */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif; /* Sleek, modern font */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f4f4f4; /* Light background for the whole page */
-  color: #333; /* Darker text color for better readability */
+  background-color: #f4f4f4;
+  color: #333;
   line-height: 1.6;
 }
 
 /* Navigation Bar Styles */
 .navbar {
-  background-color: #333; /* Dark gray background for navbar */
+  background-color: #333;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
 .navbar a {
-  float: left;
-  display: block;
-  color: #fff; /* White text for links */
-  text-align: center;
-  padding: 12px 18px; /* Slightly smaller padding for a more compact look */
+  color: #fff;
+  padding: 12px 18px;
   text-decoration: none;
-  font-size: 14px; /* Small text for links */
+  font-size: 14px;
+  text-align: center;
 }
 
 .navbar a:hover {
@@ -33,11 +34,11 @@ body {
 /* Content Section */
 .content {
   padding: 20px;
-  display: none; /* Default state for content sections is hidden */
+  display: none;
 }
 
 #home {
-  display: block; /* Ensure the Home section is visible by default */
+  display: block;
 }
 
 /* About Me Section */
@@ -50,13 +51,13 @@ body {
 }
 
 .about-me h2 {
-  font-size: 22px; /* Slightly smaller header */
+  font-size: 22px;
   margin-bottom: 12px;
-  font-weight: 500; /* Lighter weight for a sleeker look */
+  font-weight: 500;
 }
 
 .about-me p {
-  font-size: 14px; /* Adjusted to match the sleek aesthetic */
+  font-size: 14px;
   color: #333;
   line-height: 1.6;
 }
@@ -74,7 +75,7 @@ body {
 /* Blog Container */
 .blog-container {
   display: flex;
-  gap: 16px; /* Slightly smaller gap for a tighter layout */
+  gap: 16px;
   align-items: flex-start;
   justify-content: flex-start;
   margin: 0 auto;
@@ -88,17 +89,33 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   max-width: 45%;
-  font-size: 13px; /* Small text for blog content */
 }
 
 .blog-post h3 {
-  font-size: 18px; /* Small header for blog posts */
+  font-size: 18px;
   color: #444;
   margin-bottom: 8px;
 }
 
 .blog-post p {
   line-height: 1.5;
+}
+
+/* Read More Button */
+.read-more {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.read-more:hover {
+  background-color: #45a049;
 }
 
 /* Wi-Fi Router Guide Styling */
@@ -129,25 +146,8 @@ body {
 }
 
 #wifi-router-guide .blog-post p {
-  font-size: 12px; /* Small font for Wi-Fi guide content */
+  font-size: 12px;
   line-height: 1.5;
-}
-
-/* Read More Button */
-.read-more {
-  display: inline-block;
-  background-color: #4CAF50; /* Green background */
-  color: white; /* White text */
-  padding: 8px 16px; /* Slightly smaller padding */
-  border-radius: 5px;
-  text-decoration: none;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 15px;
-}
-
-.read-more:hover {
-  background-color: #45a049; /* Darker green when hovered */
 }
 
 /* Wi-Fi Router Guide Images */
@@ -160,42 +160,31 @@ body {
 }
 
 #wifi-router-guide .step-image {
-  width: 30%; /* Ensure each image doesn't take up too much space */
+  width: 30%;
 }
-
 
 #wifi-router-guide .step-image img {
   width: 100%;
-  max-width: 200px; /* Increase this to a more appropriate size */
+  max-width: 200px;
   height: auto;
   border-radius: 8px;
 }
 
-
-
-
 #wifi-router-guide .caption {
-  font-size: 12px; /* Smaller caption text */
+  font-size: 12px;
   color: #444;
   text-align: right;
   margin-top: 4px;
   font-style: italic;
 }
 
-/* Blog Post Paragraph Styling (general) */
-.blog-post p, .caption {
-  font-size: 12px; /* Ensures consistency in font size */
-  line-height: 1.6;
-  color: #333;
-}
-
 /* Footer Styles */
 footer {
-  background-color: #333; /* Dark gray background */
-  color: white; /* White text color */
+  background-color: #333;
+  color: white;
   text-align: center;
   padding: 10px 0;
-  font-size: 12px; /* Small font size */
+  font-size: 12px;
   position: fixed;
   bottom: 0;
   width: 100%;
