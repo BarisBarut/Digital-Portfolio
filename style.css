@@ -147,7 +147,7 @@ body {
 }
 
 /* Wi-Fi Router Guide Images */
-.blog-images {
+#wifi-router-guide .blog-images {
   display: flex;
   flex-direction: column;
   gap: 20px; /* Space between images */
@@ -155,18 +155,18 @@ body {
   margin-top: 20px;
 }
 
-.step-image {
+#wifi-router-guide .step-image {
   text-align: right; /* Align the images and captions to the right */
 }
 
-.step-image img {
+#wifi-router-guide .step-image img {
   width: 100%; /* Adjust size to fit within the container */
   max-width: 400px; /* Limit image width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Optional: Add rounded corners to images */
 }
 
-.caption {
+#wifi-router-guide .caption {
   font-size: 14px; /* Adjust font size to match the blog text */
   color: #444; /* Dark gray to match blog text */
   text-align: right; /* Align captions to the right */
@@ -174,12 +174,28 @@ body {
   font-style: italic; /* Optional: Make the captions italic for distinction */
 }
 
-/* Make sure captions match the blog post font style */
-.blog-post p, .caption {
-  font-size: 14px; /* Ensures consistency in font size */
-  line-height: 1.6;
+/* Blog Post Styling for general blogs (Ensure these don’t get overridden) */
+.blog-post {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  max-width: 45%; /* Adjusted to ensure both blogs align properly */
+}
+
+.blog-post h3 {
+  font-size: 20px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.blog-post p {
+  font-size: 14px; /* Ensure the text size remains consistent */
+  line-height: 1.4;
   color: #333;
 }
+
 
 
 /* Footer Styles */
