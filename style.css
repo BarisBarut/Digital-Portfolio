@@ -153,22 +153,24 @@ body {
 /* Wi-Fi Router Guide Images */
 #wifi-router-guide .blog-images {
   display: flex;
-  flex-direction: column;
-  gap: 18px; /* Adjust gap for a tighter look */
-  align-items: flex-end;
+  gap: 20px;
+  align-items: flex-start;
+  justify-content: flex-start;
   margin-top: 16px;
 }
 
 #wifi-router-guide .step-image {
-  text-align: right;
+  width: 30%; /* Ensure each image doesn't take up too much space */
 }
 
+
 #wifi-router-guide .step-image img {
-  width: 100%; /* Ensure the image takes up the full container width */
-  max-width: 40px !important; /* Force max-width of 40px */
+  width: 100%;
+  max-width: 200px; /* Increase this to a more appropriate size */
   height: auto;
   border-radius: 8px;
 }
+
 
 
 
