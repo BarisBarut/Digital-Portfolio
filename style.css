@@ -96,6 +96,24 @@ body {
   line-height: 1.4;
 }
 
+#wifi-router-guide {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#wifi-router-guide .blog-post {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 55%;
+}
+
+
 /* Footer Styles */
 footer {
   background-color: #333; /* Dark gray background */
