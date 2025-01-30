@@ -1,3 +1,4 @@
+// Handling tab navigation to display content sections
 document.querySelectorAll('.tab-link').forEach(tab => {
   tab.addEventListener('click', function (event) {
     event.preventDefault();
@@ -16,6 +17,7 @@ document.querySelectorAll('.tab-link').forEach(tab => {
   });
 });
 
+// Handling the 'Read More' and 'Show Less' functionality for blog posts
 document.querySelectorAll('.read-more').forEach(button => {
   button.addEventListener('click', function() {
     const fullContent = this.previousElementSibling; // The .blog-full element
@@ -33,9 +35,3 @@ document.querySelectorAll('.read-more').forEach(button => {
     }
   });
 });
-
-
-
-
-
-
