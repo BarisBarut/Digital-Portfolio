@@ -158,18 +158,23 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   margin-top: 16px;
+  flex-wrap: wrap;  /* Ensure the images wrap properly if they overflow */
 }
 
 #wifi-router-guide .step-image {
-  width: 30%;
+  width: auto; /* Allow image to scale without stretching to 100% of available space */
+  flex-shrink: 0; /* Prevent flex items from shrinking */
+  max-width: 150px;  /* Limit maximum width */
 }
+
 
 #wifi-router-guide .step-image img {
   width: 100%;
-  max-width: 150px; /* Adjusted image size to be smaller */
+  max-width: 150px; /* Limit maximum width */
   height: auto;
   border-radius: 8px;
 }
+
 
 #wifi-router-guide .caption {
   font-size: 12px;
