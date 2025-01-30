@@ -119,6 +119,13 @@ body {
   background-color: #45a049;
 }
 
+/* Images in Blog Full Content */
+.blog-full img {
+  display: block;
+  width: 100%; /* Adjust the image size as needed */
+  height: auto; /* Keep the aspect ratio */
+}
+
 /* Wi-Fi Router Guide Styling */
 #wifi-router-guide {
   display: flex;
