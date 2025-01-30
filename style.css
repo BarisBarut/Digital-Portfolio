@@ -89,6 +89,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   max-width: 45%;
+  font-size: 13px; /* Font size unchanged for blog content */
 }
 
 .blog-post h3 {
@@ -146,7 +147,7 @@ body {
 }
 
 #wifi-router-guide .blog-post p {
-  font-size: 12px;
+  font-size: 12px; /* Font size unchanged for guide content */
   line-height: 1.5;
 }
 
@@ -165,7 +166,7 @@ body {
 
 #wifi-router-guide .step-image img {
   width: 100%;
-  max-width: 200px;
+  max-width: 150px; /* Adjusted image size to be smaller */
   height: auto;
   border-radius: 8px;
 }
