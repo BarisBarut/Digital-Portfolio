@@ -146,6 +146,27 @@ body {
   background-color: #45a049; /* Darker green when hovered */
 }
 
+/* Step Image Styling */
+.step-image {
+  display: inline-block;
+  vertical-align: top; /* Aligns the image next to the text */
+  margin-left: 15px; /* Adds space between the text and image */
+  max-width: 300px; /* Limits the width of the image */
+}
+
+.step-image img {
+  width: 100%; /* Ensures the image fills its container's width */
+  height: auto; /* Maintains the aspect ratio of the image */
+  border-radius: 5px; /* Optional: Adds rounded corners to the image */
+}
+
+.step-image figcaption {
+  font-size: 12px;
+  text-align: center;
+  color: #666; /* Lighter gray for the caption text */
+  margin-top: 5px; /* Adds space between the image and caption */
+}
+
 /* Footer Styles */
 footer {
   background-color: #333; /* Dark gray background */
