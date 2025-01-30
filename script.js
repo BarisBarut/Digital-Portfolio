@@ -18,9 +18,10 @@ document.querySelectorAll('.tab-link').forEach(tab => {
 
 document.querySelectorAll('.read-more').forEach(button => {
   button.addEventListener('click', function () {
-    const blogSummary = this.previousElementSibling.previousElementSibling;
-    const blogFull = this.previousElementSibling;
+    const blogSummary = this.previousElementSibling;  // This now points to the correct summary
+    const blogFull = blogSummary.nextElementSibling; // Now points to the correct full content
 
+    // Toggle between showing full blog and summary
     if (blogFull.style.display === 'none') {
       blogFull.style.display = 'block';
       blogSummary.style.display = 'none';
@@ -32,4 +33,3 @@ document.querySelectorAll('.read-more').forEach(button => {
     }
   });
 });
-
