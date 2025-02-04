@@ -1,4 +1,14 @@
 /* General Styles */
+.content {
+  display: none;  /* Hide all content by default */
+}
+
+#home {
+  display: block; /* Show the home section by default */
+}
+
+/* Other CSS remains the same */
+
 body {
   font-family: 'Arial', sans-serif;
   margin: 0;
