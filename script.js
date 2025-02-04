@@ -3,6 +3,14 @@ document.querySelectorAll('.tab-link').forEach(tab => {
   tab.addEventListener('click', function (event) {
     event.preventDefault();
 
+    // Remove 'active' class from all tabs
+    document.querySelectorAll('.tab-link').forEach(link => {
+      link.classList.remove('active');
+    });
+
+    // Add 'active' class to the clicked tab
+    this.classList.add('active');
+
     // Hide all content sections
     document.querySelectorAll('.content').forEach(content => {
       content.style.display = 'none';
